@@ -1067,7 +1067,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #000;
+    background: #e6e6e6;
     transition: opacity 0.8s ease;
   }
   .intro-screen.intro-hide{
@@ -1912,10 +1912,10 @@
     if (video){
       video.playbackRate = 1.5;
       video.addEventListener('ended', dismissIntro);
-      // 링크 클릭(페이지 진입) 1초 후에 재생 시작
+      // 링크 클릭(페이지 진입) 0.2초 후에 재생 시작
       setTimeout(function(){
         video.play().catch(function(){});
-      }, 1000);
+      }, 200);
     }
     if (skipBtn){
       skipBtn.addEventListener('click', dismissIntro);
