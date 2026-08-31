@@ -112,7 +112,7 @@
   .fixed-frame .ff-bottom{
     position: absolute;
     bottom: 0; left: 0; right: 0;
-    height: 260px;
+    height: 220px;
   }
   .fixed-frame .ff-bottom svg{
     display: block;
@@ -122,7 +122,7 @@
   .fixed-frame .ff-bottom .flat-text{
     position: absolute;
     left: 0; right: 0;
-    top: 200px;
+    top: 169px;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     font-size: 13px;
@@ -1636,7 +1636,7 @@
   // TODO: 카카오 디벨로퍼스(https://developers.kakao.com)에서 발급받은
   // JavaScript 키를 아래 YOUR_KAKAO_APP_KEY 자리에 넣어주세요.
   (function loadKakaoMap(){
-    var KAKAO_APP_KEY = 'YOUR_KAKAO_APP_KEY';
+    var KAKAO_APP_KEY = 'bf402559cf7b8488f3f2a59451010d49';
     var script = document.createElement('script');
     script.src = '//dapi.kakao.com/v2/maps/sdk.js?appkey=' + KAKAO_APP_KEY + '&autoload=false&libraries=services';
     script.onload = function(){
@@ -1826,7 +1826,7 @@
   // ===== INFORMATION : 카카오 SDK 초기화 =====
   // TODO: 카카오 디벨로퍼스 > 내 애플리케이션 > 앱 키 > JavaScript 키를 넣어주세요.
   if (window.Kakao && !Kakao.isInitialized()){
-    Kakao.init('YOUR_KAKAO_JS_KEY');
+    Kakao.init('bf402559cf7b8488f3f2a59451010d49');
   }
 
   // ===== INFORMATION : 링크 복사 =====
